@@ -1,10 +1,11 @@
-# CentOS 7 + Docker-gen
+# Ubuntu 14.04 + Docker-gen
 
-FROM andrefernandes/docker-centos7-base
+FROM dockerfile/ubuntu
 
-MAINTAINER Andre Fernandes
+MAINTAINER Markus Padourek
 
-# Based on the original work from "jwilder / nginx-proxy"
+# Based on the original work from "jwilder/nginx-proxy"
+# and modified from "andrefernandes/docker-gen"
 # Unlike the original nginx-proxy image, here I try to
 # split nginx and docker-gen into separate containers.
 

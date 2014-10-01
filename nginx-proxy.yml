@@ -1,9 +1,9 @@
 proxy:
-  image: andrefernandes/docker-nginx
+  image: dockerfile/nginx
   ports:
     - "80:80"
 dockergen:
-  image: andrefernandes/docker-gen
+  image: artificial/docker-gen-nginx
   volumes:
     - /var/run/docker.sock:/var/run/docker.sock
     - /usr/bin/docker:/usr/bin/docker
